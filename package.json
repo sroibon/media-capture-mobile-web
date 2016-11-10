@@ -1,0 +1,11 @@
+{
+  "name": "typescript-poc",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "author": "sroibon",
+  "dependencies": {
+    "express": "*",
+    "engine": "*"
+  }
+}
