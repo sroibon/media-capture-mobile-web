@@ -7,6 +7,8 @@
 	<title>Camera Web Mobile</title>
 	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
+	<link rel="stylesheet" type="text/css" href="css/camera-capture.css">
+
 	<script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -27,7 +29,13 @@
 
 	<input type="file" accept="image/*;capture=camera">
 
+	<div class="alert alert-success" role="alert">
+		<p>YAY! you can use your phone camera.</p>
+	</div>
 
+	<div class="alert alert-danger" role="alert">
+		<p>Your phone does not support Camera capture from this app.</p>
+	</div>
 
 	<script type="text/javascript" src="js/camera-capture.js"></script>
 </body>

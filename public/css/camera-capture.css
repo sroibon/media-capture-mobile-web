@@ -1,0 +1,14 @@
+input,
+.alert-success,
+.alert-danger {
+
+	margin: 10px !important;
+
+}
+
+
+.alert-success,
+.alert-danger {
+	display: none;
+	text-align: center;
+}

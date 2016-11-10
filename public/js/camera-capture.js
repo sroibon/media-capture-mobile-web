@@ -1,5 +1,7 @@
 console.log('Working!');
 
+var successAlert = $('.alert-success');
+var dangerAlert = $('.alert-danger');
 
 function hasGetUserMedia() {
 
@@ -9,13 +11,12 @@ function hasGetUserMedia() {
 if (hasGetUserMedia()) {
   // Good to go!
   console.log('You can use your camera!');
-  var successDiv = document.createElement('div');
-  successDiv.id = 'success';
-  successDiv.className = 'alert alert-success';
 
-  document.getElementsByTagName('body')[0].appendChild(successDiv);
+  successAlert.show();
 
 
 } else {
   console.log('getUserMedia() is not supported in your browser');
+  dangerAlert.show();
+
 }
