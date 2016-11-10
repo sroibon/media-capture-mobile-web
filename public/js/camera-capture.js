@@ -1,22 +1,24 @@
-console.log('Working!');
+(function($) {
 
-var successAlert = $('.alert-success');
-var dangerAlert = $('.alert-danger');
+	console.log('Working!');
 
-function hasGetUserMedia() {
+	var successAlert = $('.alert-success');
+	var dangerAlert = $('.alert-danger');
 
-  return !!(navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
-}
+	function hasGetUserMedia() {
 
-if (hasGetUserMedia()) {
-  // Good to go!
-  console.log('You can use your camera!');
+	  return !!(navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+	}
 
-  successAlert.show();
+	if (hasGetUserMedia()) {
+
+	  successAlert.show();
 
 
-} else {
-  console.log('getUserMedia() is not supported in your browser');
-  dangerAlert.show();
+	} else {
 
-}
+	  dangerAlert.show();
+
+	}
+
+} ($));
